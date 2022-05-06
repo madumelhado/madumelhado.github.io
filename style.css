@@ -1,0 +1,141 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    color: #eafaf9;
+    font-family: 'Barlow', sans-serif;
+}
+
+img {
+    max-width: 11%;
+}
+
+ul {
+    list-style: none;
+    font-size: 20px;
+}
+a {
+    text-decoration: none;
+}
+
+body {
+    background: url(./background\ gradient\ blue\ and\ magenta.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 1px 1px 10px 1px rgb(156, 106, 248);
+    margin-bottom: 100px;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    padding: 10px
+}
+header ul li a {
+    transition: 500ms;
+}
+
+header ul li a:hover {
+    color: rgb(156, 106, 248);
+}
+.container {
+    text-align: center;
+}
+.container .name h1 {
+    font-size: 65px;
+}
+.container .name h5 {
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+#arrow {
+    font-size: 35px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+}
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+#animation{
+    transition: 300ms;
+}
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active {
+    display: block !important;
+    transition: 400ms;
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.form input {
+    width: 50%;
+    color: rgb(51, 51, 51);
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.form button {
+    width: 15%;
+    padding: 5px 10px;
+    background-color: rgb(114, 82, 255);
+    color:  #eafaf9;
+    border: none;
+    cursor: pointer;
+    transition: 500ms;
+    font-weight: 500;
+    border-radius: 0px 5px 5px 0px;
+    margin-top: 20px;
+    margin-left: -5px;
+}
+.form button:hover {
+    background-color: rgb(252, 46, 97);
+    color: #eafaf9;
+}
+
+@media only screen and (max-width: 480px) {
+    .container .name h1 {
+        font-size: 45px;
+    }
+    .container .name h5 {
+        font-size: 20px;
+    }
+
+    #about p {
+        max-width: 80%;
+    }
+
+    img {
+        max-width: 40%;
+    }
+
+    .form {
+        width: 100%;
+
+    }
+}
